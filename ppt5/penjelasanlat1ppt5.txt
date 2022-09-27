@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	string n,p;
+	float t,uts,uas;
+	int nilai;
+	char nh;
+	
+	
+	cout<<"masukkan nama anda : "; 
+	getline(cin,n);
+	cout<<"masukkan nilai tugas anda : "; cin>>t;
+	cout<<"masukkan nilai uts anda : "; cin>>uts;
+	cout<<"masukkan nilai uas anda : "; cin>>uas;
+	
+	nilai = (t+uts+uas)/3;
+	
+	cout<<"nilai anda : "<<nilai<<endl;
+	
+	cout<<"-----------------------"<<endl;
+	
+	cout<<"selamat "<<n<<endl;
+	
+	
+	cout<<"masukkan nilai anda "; cin>>nilai;
+	
+	//bawah salah
+	
+	switch (nilai)
+	{
+	case 1 : cout<<"A"<<endl;break;
+	case 2 : cout<<"B"<<endl;break;
+	case 3 : cout<<"C"<<endl; break;
+	case 4 : cout<<"D"<<endl; break;
+	case 5 : cout<<"E"<<endl; break;
+	default : cout<<"Salah input"<<endl;
+    }
+	
+	//atas salah
+	
+	
+	
+	cout<<"masukkan nilai huruf anda : "; cin>>nilai;
+	switch (nh)
+	{
+		case 'A' : cout<<"predikat : sangat baik"; break;
+		case 'B' : cout<<"predikat : baik"; break;
+		case 'C' : cout<<"predikat : cukup"; break;
+		case 'D' : cout<<"predikat : kurang"; break;
+		case 'E' : cout<<"predikat : sangat kurang"; break;
+		default : cout<<"anda salah menginput nilai huruf";
+	}
+	
+}
+}
+
+char cuma petik 1
+gaperlu cin nilai pas cari nh
+cari nh pake if, else if, else dan pake operator binary
+d dlm if else else if else gabisa cout
+cari predikat gaperlu cin tp manggil
+nilai jd float
+gaperlu 'cout predikat lalu panggil lagi'
